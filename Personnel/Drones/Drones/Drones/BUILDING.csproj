@@ -1,0 +1,104 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{2E1EA528-4D1A-4EDE-9757-4A92DE1E2AD3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BUILDING</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Drones\.gitignore" />
+    <Content Include="Drones\Drones.sln" />
+    <Content Include="Drones\Drones\bin\Debug\net6.0-windows\Drones.dll" />
+    <Content Include="Drones\Drones\bin\Debug\net6.0-windows\Drones.exe" />
+    <Content Include="Drones\Drones\bin\Debug\net6.0-windows\Drones.pdb" />
+    <Content Include="Drones\Drones\Drones.csproj.user" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\apphost.exe" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.csproj.FileListAbsolute.txt" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.dll" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.pdb" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\refint\Drones.dll" />
+    <Content Include="Drones\Drones\obj\Debug\net6.0-windows\ref\Drones.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Drones\Drones\bin\Debug\net6.0-windows\Drones.deps.json" />
+    <None Include="Drones\Drones\bin\Debug\net6.0-windows\Drones.runtimeconfig.json" />
+    <None Include="Drones\Drones\Drones.csproj" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.AssemblyInfoInputs.cache" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.assets.cache" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.csproj.BuildWithSkipAnalyzers" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.csproj.CoreCompileInputs.cache" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.csproj.GenerateResource.cache" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.designer.deps.json" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.designer.runtimeconfig.json" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.genruntimeconfig.cache" />
+    <None Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.sourcelink.json" />
+    <None Include="Drones\Drones\obj\Drones.csproj.nuget.dgspec.json" />
+    <None Include="Drones\Drones\obj\Drones.csproj.nuget.g.props" />
+    <None Include="Drones\Drones\obj\Drones.csproj.nuget.g.targets" />
+    <None Include="Drones\Drones\obj\project.assets.json" />
+    <None Include="Drones\Drones\obj\project.nuget.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drones\Drones\Helpers\TextHelpers.cs" />
+    <Compile Include="Drones\Drones\Model\Drone.cs" />
+    <Compile Include="Drones\Drones\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.AssemblyInfo.cs" />
+    <Compile Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.GlobalUsings.g.cs" />
+    <Compile Include="Drones\Drones\Program.cs" />
+    <Compile Include="Drones\Drones\View\AirSpace.cs" />
+    <Compile Include="Drones\Drones\View\AirSpace.Designer.cs">
+      <DependentUpon>AirSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drones\Drones\View\Drone.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Drones\Drones\obj\Debug\net6.0-windows\Drones.AirSpace.resources" />
+    <EmbeddedResource Include="Drones\Drones\View\AirSpace.resx">
+      <DependentUpon>AirSpace.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\BUILDING\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
